@@ -1,0 +1,150 @@
+body {
+    font-family: 'Konkhmer Sleokchher', cursive;
+    background-image: url(../images/home.png);
+    color: white;
+}
+
+
+main {
+    display: flex;
+    justify-content: center;
+    height: auto;
+    width:50%;
+    margin:auto;
+    
+    text-align: center;
+    
+}
+
+form {
+    width: 500px;
+    height: auto;
+    margin-top:7%;
+
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    
+
+    padding: 30px;
+    border: 1px gray solid;
+    border-radius: 10px;
+
+    background-color: black;
+    font-size: 13px;
+
+
+}
+
+
+
+#log{
+    color:white;
+}
+.name img, .username img,.surname img, .password img, .email img , .confirm_password img , .allow img{
+    width: 10px;
+    height: 10px;
+    margin-right: 0px;
+}
+ .after img{
+    width: 10px;
+    height: 10px;
+    margin-right: 2px;
+
+ }
+.name , .username,.surname, .password, .email , .confirm_password , .after   {
+    display: flex;
+    text-align: left;
+    justify-content: space-around;
+    margin-bottom: 0px;
+    margin-top: 10px; 
+    align-self:center;
+
+
+}
+.allow{
+    margin-top:10px;
+    width:100%;
+}
+
+form .name label {
+    padding: 0;
+}
+
+.hidden {
+    display: none;
+    color: red;
+    font-size: 12px;
+    text-align: left;
+  
+    
+}
+.after{
+    color: red;
+    font-size: 12px;
+    text-align: left;
+    display: flex;    
+    align-items: center;
+
+}
+
+
+
+.name input , .username input,.surname input, .password input,  .email input, .confirm_password input{
+    border-radius: 5px;
+    padding: 3px;
+    border: black 2px solid;
+
+
+}
+.name input:hover , .username input:hover,.surname input:hover, .password input:hover,  .email input:hover, .confirm_password input:hover{
+    border: white 2px solid;
+}
+
+.submit {
+    margin: 30;
+}
+
+.submit input {
+    width: 180px;
+    border-radius: 20px;
+    padding: 5px;
+    background-color: white;
+    border: 2px black solid;
+    padding: 5px;
+    background-color: lightskyblue;
+}
+
+.submit input:hover {
+
+    border: 2px lightskyblue solid;
+    font-size: 14px;
+
+}
+
+#icona {
+    width: 100px;
+    height: 90px;
+    align-content: center;
+    margin-top: 0px;
+}
+
+.error {
+    color:red;
+    display: block;
+}
+
+
+@media(max-width:530px){
+    .error{
+        font-size:10px;
+    }
+}
+
+@media(max-width:300px){
+    form{
+        width:auto;
+        padding:15px;
+    }
+}
+

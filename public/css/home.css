@@ -1,0 +1,276 @@
+body {
+    font-size: 20px;
+    font-family: 'Lobster', sans-serif;
+    margin: 0px;
+    position: relative;
+    z-index: -1;
+
+    background-image: url(../images/home.png);
+    background-size: cover;
+    background-position: center;
+
+    color: white;
+}
+
+header {
+    height: 400px;
+    margin: 0px;
+    background-image: url(../images/archons.jpg);
+    background-size: cover;
+    background-position: left;
+
+    position: relative;
+    margin-bottom: 80px;
+    z-index: -2;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+
+
+}
+
+#Overlay {
+    background-color: rgba(0, 0, 0, 0.3);
+    position: absolute;
+
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+
+}
+
+
+#destro1,
+#destro2 {
+
+    opacity: 0.8;
+    font-size: 1em;
+    position: relative;
+    right: 50px;
+    text-align: right;
+
+
+    font-family: 'Abril Fatface', sans-serif;
+}
+
+.tHome {
+    font-size: 3em;
+}
+
+.descHome {
+    font-size: 1.5em;
+}
+
+.separate {
+    height: 3px;
+    width: 50%;
+    background-color: white;
+}
+
+#one,
+#three {
+    position: relative;
+    left: 50%;
+
+}
+
+#sinistro1,
+#sinistro2 {
+    opacity: 0.8;
+    font-size: 1em;
+    margin-left: 50px;
+    left: 50px;
+    text-align: left;
+    align-self: left;
+    font-family: 'Abril Fatface', sans-serif;
+}
+
+
+
+
+
+
+.vision {
+    width: 100px;
+    height: 100px;
+
+    margin-top: -130px;
+    border-radius: 100px;
+    margin-left: 10px;
+    margin-right: 10px;
+
+    background-color: white;
+    border: 2px solid rgba(92, 92, 150, 0.897);
+
+    position: relative;
+
+
+
+}
+
+.vision img {
+    width: 100%;
+    height: 100%;
+
+    border-radius: 100px;
+
+}
+
+#vision {
+    display: flex;
+    justify-content: center;
+}
+
+#allvisions {
+    display: none;
+}
+
+
+#laterale {
+    width: 50px;
+    height: 50px;
+
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    padding: 5px;
+
+    display: none;
+    display: flex;
+    flex-direction: column;
+    z-index: 6;
+    margin-right: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+#contenitore {
+
+
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+#verticale {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 60%;
+    height: 1000px;
+    background-color: rgb(53, 53, 102);
+    border-right: 5px white solid;
+    border-left: 5px white solid;
+    margin-top: -80px;
+}
+
+footer {
+    color: black;
+    font-family: 'Fjalla One', sans-serif;
+
+    margin-top: 130px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    height: 50px;
+    background-color: rgba(92, 92, 150, 0.897);
+
+}
+
+@media(max-width:1000px) {
+
+    
+
+    .vision
+     {
+        display: none;
+    }
+
+    #allvisions,
+    #menu,
+    #laterale {
+        display: block;
+    }
+
+
+
+}
+
+@media(max-width:800px) {
+
+    body {
+        font-size: 15px;
+
+    }
+
+   
+}
+
+@media(max-width:600px) {
+
+    body {
+        font-size: 13px;
+    }
+
+    .tHome {
+        font-size: 2em;
+    }
+
+    #sottotitolo {
+        font-size: 1.5;
+    }
+
+    #destro1,
+    #destro2,
+    #sinistro1,
+    #sinistro2 {
+        font-size: 1.25em;
+
+        align-self: center;
+        text-align: center;
+    }
+
+    #destro1,
+    #destro2 {
+        right: 0px;
+    }
+
+    #sinistro1,
+    #sinistro2 {
+        margin-left: 0px;
+    }
+
+    .separate {
+        width: 100%;
+    }
+
+    #one,
+    #three {
+
+        left: 0%;
+
+    }
+
+
+
+
+}

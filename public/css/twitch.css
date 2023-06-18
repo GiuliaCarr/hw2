@@ -1,0 +1,199 @@
+body {
+    font-size: 20px;
+
+    margin: 0px;
+    position: relative;
+    z-index: -1;
+
+    background-image: url(../images/home.png);
+    background-size: cover;
+    background-position: center;
+    font-family: 'Fjalla One', sans-serif;
+    color: white;
+}
+
+header {
+    height: 400px;
+    margin: 0px;
+    background-image: url(../images/banner.jpg);
+    background-size: cover;
+    background-position: center;
+
+    position: relative;
+    margin-bottom: 80px;
+    z-index: -2;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+
+
+}
+
+#Overlay {
+    background-color: rgba(0, 0, 0, 0.3);
+    position: absolute;
+
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+
+}
+
+
+.Button:hover,
+.tw:hover,
+.char:hover,
+.vis:hover,
+.profile:hover,
+.about:hover,
+#home:hover {
+
+    color: lightskyblue;
+}
+
+.log:hover {
+    color: purple;
+    background-color: lightskyblue
+}
+
+
+
+#results {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#results div {
+    position: relative;
+    font-size: 0.75em;
+    width: 500px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 10px;
+    border-radius: 20px;
+    border: 1px solid white;
+    margin-top: 40px;
+    background-color: white;
+    color: purple;
+    position: relative;
+
+
+}
+
+#results div img {
+    max-width: 50%;
+    max-height: 50%;
+    align-self: center;
+}
+
+#results div a {
+    text-decoration: none;
+    margin-top: 30px;
+
+    color: white;
+    border-radius: 20px;
+    background-color: purple;
+    border: 2px solid purple;
+    font-family: 'Fjalla One', sans-serif;
+    width: 150px;
+    align-self: center;
+
+}
+
+#break {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+#results h1,
+#results h2,
+#results img,
+#results img,
+#results span,
+#results a {
+    margin: 5px;
+}
+
+.save {
+    opacity: 0.7;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    height: 40px;
+    width: 40px;
+
+
+}
+
+.saved {
+    opacity: 0.7;
+    position: absolute;
+    top: 15;
+    left: 15;
+    height: 70px;
+    width: 70px;
+
+}
+
+#results a:hover {
+    background-color: violet;
+    border: 2px solid violet;
+}
+
+.save:hover {
+    opacity: 1;
+}
+
+#divide {
+    width: 100%;
+    border-top: dotted 5px white;
+}
+
+
+@media(max-width:1000px) {
+
+    .Button,
+    nav {
+        display: none;
+    }
+
+
+    #menu,
+    #laterale {
+        display: block;
+    }
+
+
+
+}
+
+@media(max-width:560px){
+    body{
+        font-size:15px;
+    }
+    #results div{
+        width:350px;
+        margin:5px;
+    }
+    
+}
+
+@media(max-width:400px){
+    body{
+        font-size:13px;
+    }
+    #results div{
+        width:270px;
+       
+    }
+}

@@ -1,0 +1,388 @@
+body {
+
+    font-size: 20px;
+
+    margin: 0px;
+    position: relative;
+    z-index: -1;
+
+    background-image: url(../images/home.png);
+    background-size: cover;
+    background-position: center;
+
+    color: white;
+    font-family: 'Konkhmer Sleokchher', sans-serif;
+}
+
+
+
+header {
+    height: 400px;
+
+    margin: 0px;
+    background-image: url(../images/img.jpg);
+    background-size: cover;
+    background-position: right;
+
+    position: relative;
+
+    z-index: -2;
+    margin-bottom: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+
+
+}
+
+#Overlay {
+    background-color: rgba(0, 0, 0, 0.3);
+    position: absolute;
+
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+
+}
+
+.Button:hover,
+.tw:hover,
+.char:hover,
+.vis:hover,
+.profile:hover,
+.about:hover,
+#home:hover {
+
+    color: lightskyblue;
+}
+
+.log:hover {
+    color: purple;
+    background-color: lightskyblue
+}
+#searchbar {
+    width: 300px;
+    height: 40px;
+    border-radius: 20px;
+
+}
+
+form {
+    width: 100%;
+    align-self: center;
+    font-family: 'Fjalla One', sans-serif;
+    text-align: center;
+
+}
+
+
+
+#sub {
+    display: none;
+    font-family: 'Fjalla One', sans-serif;
+    border-radius: 20px;
+    height: 30px;
+    width: 80px;
+    background-color: rgb(155, 155, 253);
+}
+
+.hidden {
+    display: none;
+}
+
+
+#alert {
+
+    opacity: 0.5;
+
+    height: 20px;
+    width: 20px;
+}
+
+#alert:hover {
+    opacity: 1;
+}
+
+.show {
+    margin-top: 20px;
+    margin-left: 5px;
+    display: block;
+}
+
+#dash {
+
+
+    align-content: center;
+    font-family: 'Fjalla One', sans-serif;
+}
+
+
+#Titolo {
+    font-size: 4em;
+
+    font-family: 'Lobster', sans-serif;
+}
+
+#separatore {
+    background-color: white;
+    height: 5px;
+    width: 100%;
+}
+
+
+#ricerca {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-content: center;
+
+}
+
+#results {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+#results section {
+    display: flex;
+    background-color: rgb(155, 155, 253);
+    border: 2px solid rgb(53, 53, 102);
+
+    height: 500px;
+    width: 800px;
+    margin: 30px;
+}
+
+#results section:hover {
+
+    background-color: rgb(94, 94, 153);
+}
+
+#results section div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    position: relative;
+    width: 100%;
+    margin: 20px 10px;
+    opacity: 0.9;
+    font-family: 'Fjalla One', sans-serif;
+
+
+    padding-top: 5px;
+    padding-right: 5px;
+    padding-left: 15px;
+    padding-bottom: 80px;
+
+}
+
+#results div h1 {
+    font-family: 'Abril Fatface', sans-serif;
+}
+
+#results img {
+    max-height: 100%;
+    max-width: 100%;
+}
+
+#results div span,
+#results div h3 {
+    align-self: flex-start;
+}
+
+#results div h1,
+#results div h3,
+#results div span {
+    margin-top: 10px;
+}
+
+#container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+#container section {
+    display: flex;
+    background-color: rgb(155, 155, 253);
+    border: 2px solid rgb(53, 53, 102);
+
+    height: 500px;
+    width: 800px;
+    margin: 30px;
+    opacity: 0.9;
+}
+
+#container section:hover {
+
+    background-color: rgb(94, 94, 153);
+
+}
+
+#container section div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    position: relative;
+    width: 100%;
+    margin: 20px 10px;
+
+    font-family: 'Fjalla One', sans-serif;
+
+
+    padding-top: 5px;
+    padding-right: 5px;
+    padding-left: 15px;
+    padding-bottom: 80px;
+
+
+
+
+}
+
+#container section div h1 {
+    font-family: 'Abril Fatface', sans-serif;
+}
+
+.save {
+    opacity: 0.5;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    height: 50px;
+    width: 50px;
+
+
+}
+
+.click {
+    background-color: rebeccapurple;
+}
+
+.save:hover {
+    opacity: 1;
+}
+
+#container div img {
+    max-height: 100%;
+    max-width: 100%;
+}
+
+#container div span,
+#container div h3 {
+    align-self: flex-start;
+}
+
+#container div h1,
+#container div h3,
+#container div span {
+    margin-top: 10px;
+}
+
+.error {
+    align-self: center;
+}
+
+
+
+@media(max-width:800px) {
+
+    body {
+        font-size: 16px;
+
+    }
+
+    #ricerca {
+        height: 30%;
+
+    }
+
+    #container section,
+    #results section {
+        height: 400px;
+        margin: 18px;
+    }
+
+    #container div h1,
+    #container div h3,
+    #container div span,
+    #results div h1,
+    #results div h3,
+    #results div span {
+        margin-top: 5px;
+    }
+
+}
+
+@media(max-width:678px) {
+
+    body {
+        font-size: 14px;
+
+    }
+
+
+    #container section,
+    #results section {
+        height: 300px;
+        width: 400px;
+        margin: 15px;
+    }
+
+    #results section {
+        margin: 0px;
+    }
+
+    #searchbar {
+        width: 40%
+    }
+
+    #container div span,
+    #results div span {
+        display: none;
+    }
+
+    #container div h1,
+    #container div h3,
+    #results div h1,
+    #results div h3 {
+        align-self: center;
+
+    }
+
+    .save {
+        position: absolute;
+        top: 200px;
+        align-self: right;
+
+        height: 50px;
+        width: 50px;
+    }
+
+
+    #results {
+        padding: 5px;
+        margin: 5px;
+    }
+
+}
+
+@media(max-width:300px) {
+
+    #container section,
+    #results section {
+        height: 300px;
+        width: 300px;
+        
+    }
+
+}
